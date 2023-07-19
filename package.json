@@ -1,0 +1,58 @@
+{
+  "files": [
+    "lib/**/*"
+  ],
+  "license": "ISC",
+  "version": "1.0.0",
+  "author": "Psycho",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "name": "wallet-ethers-next",
+  "description": "Next Generation Dapps Wallet Providers.",
+  "homepage": "https://github.com/Anunnakill/Wallet-ethers-next#readme",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "dapp",
+    "Dapps",
+    "Wallet",
+    "Providers",
+    "ethers",
+    "ethersjs",
+    "metamask",
+    "metamask sdk",
+    "walletconnect",
+    "walletconnect v2",
+    "walletconnect web3Modal",
+    "particle",
+    "particle network",
+    "particle Auth",
+    "Particle Network SDK",
+    "Particle Network provider",
+    "Particle Network Auth",
+    "particle Auth Web",
+    "particle Web"
+  ],
+  "bugs": {
+    "url": "https://github.com/Anunnakill/Wallet-ethers-next/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Anunnakill/Wallet-ethers-next.git"
+  },
+  "dependencies": {
+    "@metamask/sdk": "^0.5.3",
+    "@particle-network/auth": "^0.14.4",
+    "@particle-network/provider": "^0.14.4",
+    "@walletconnect/ethereum-provider": "^2.9.0",
+    "@walletconnect/modal": "^2.6.0",
+    "ethers": "^6.6.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
