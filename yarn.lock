@@ -282,10 +282,10 @@
     react "^18.2.0"
     react-dom "^18.2.0"
 
-"@metamask/sdk@^0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@metamask/sdk/-/sdk-0.5.3.tgz#7d4e17237e6760bb0000365d81a792b4dced2b7d"
-  integrity sha512-dGyoivSxp9V0pklqCRwRWk+8sAKbDVHMbuEAk+QZmSsBzhoXqkMlDr1mgRyXROqRWK1wBuolYvj4Xq1Eh5/eMw==
+"@metamask/sdk@^0.5.5":
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/@metamask/sdk/-/sdk-0.5.5.tgz#ae24613338b1e930a76009111d16e02f020add40"
+  integrity sha512-bXoBFG19Vpnt8vKSIF40W76U2YJrrzMLSlXFPK2e4ZlgriCkbC0ISQw0sG6Xt/NfNL2E5vw8+rfxMGMBHL/LPA==
   dependencies:
     "@metamask/onboarding" "^1.0.1"
     "@metamask/post-message-stream" "^6.1.0"

@@ -42,7 +42,7 @@
     "url": "git+ssh://git@github.com/Anunnakill/Wallet-ethers-next.git"
   },
   "dependencies": {
-    "@metamask/sdk": "^0.5.3",
+    "@metamask/sdk": "^0.5.5",
     "@particle-network/auth": "^0.14.4",
     "@particle-network/provider": "^0.14.4",
     "@walletconnect/ethereum-provider": "^2.9.0",

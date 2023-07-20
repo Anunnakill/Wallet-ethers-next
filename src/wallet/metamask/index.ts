@@ -15,6 +15,7 @@ class Metamask {
   }
 
   public async connect() {
+    let res = await this.MMSDK.init();
     this.web3Provider = this.MMSDK.getProvider();
     await this.web3Provider.request({ method: "eth_requestAccounts", params: [] });
 
