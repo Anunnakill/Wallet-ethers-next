@@ -44,3 +44,4 @@ class Walletconnect {
 }
 
 export { Walletconnect };
+export type { EthereumProviderOptions };

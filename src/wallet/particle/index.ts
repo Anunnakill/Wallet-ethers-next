@@ -44,3 +44,4 @@ class Particle {
 }
 
 export { Particle };
+export type { IParticleConfig };

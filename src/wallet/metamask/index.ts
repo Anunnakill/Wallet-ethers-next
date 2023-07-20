@@ -8,12 +8,16 @@ class Metamask {
   public signer!: JsonRpcSigner;
   public web3Provider!: SDKProvider;
 
+  private MMSDK: MetaMaskSDK;
+
   constructor(MMSDKOptions?: MetaMaskSDKOptions) {
-    const MMSDK = new MetaMaskSDK(MMSDKOptions);
-    this.web3Provider = MMSDK.getProvider();
+    this.MMSDK = new MetaMaskSDK(MMSDKOptions);
   }
 
   public async connect() {
+    this.web3Provider = this.MMSDK.getProvider();
+    await this.web3Provider.request({ method: "eth_requestAccounts", params: [] });
+
     const ethersProvider = new BrowserProvider(this.web3Provider);
     this.signer = await ethersProvider.getSigner();
     this.address = this.signer.address;
@@ -37,3 +41,4 @@ class Metamask {
 }
 
 export { Metamask };
+export type { MetaMaskSDKOptions };
