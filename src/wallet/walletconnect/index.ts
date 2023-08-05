@@ -39,7 +39,7 @@ class Walletconnect {
   }
 
   public async switchEthereumChain() {
-    throw new Error("Does not support switchEthereumChain");
+    console.warn("Does not support switchEthereumChain");
   }
 }
 
