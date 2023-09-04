@@ -18,7 +18,7 @@ class Particle {
   }
 
   public async connect() {
-    await this.particle.auth.login(this.particleConfig.loginOptions);
+    if (!this.particle.auth.isLogin()) await this.particle.auth.login(this.particleConfig.loginOptions);
     this.web3Provider = new ParticleProvider(this.particle.auth);
 
     const ethersProvider = new BrowserProvider(this.web3Provider);
